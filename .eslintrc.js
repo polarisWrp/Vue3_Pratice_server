@@ -21,5 +21,21 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 120,
+        tabWidth: 2,
+        semi: false, //句末使用分号
+        singleQuote: true,
+        endOfLine: 'auto', //结束行形式
+        trailingComma: 'none', //多行时尽可能打印尾随逗号
+        arrowParens: 'always', //单参数箭头函数参数周围使用圆括号-eg: (x) => x
+        proseWrap: 'preserve',
+        embeddedLanguageFormatting: 'auto', //对引用代码进行格式化
+        htmlWhitespaceSensitivity: 'ignore' //对html全局空白忽略
+      }
+    ]
+
   },
 };
